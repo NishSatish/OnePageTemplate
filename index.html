@@ -3,11 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="js/odometer.min.js" charset="utf-8"></script>
     <script src="js/typed.min.js" charset="utf-8"></script>
     <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/SliderScript.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/odometer-theme-default.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -41,13 +43,13 @@
     </nav>
 
     <!-- Parallax -->
-    <div class="img-holder">
+    <section class="img-holder">
       <h1 class="img-text text-center">Ich bin Sharan Sridhar</h1>
       <div class="roller img-arr"></div>
-    </div>
+    </section>
 
     <!-- The numbers that matter -->
-    <div class="stats-holder">
+    <section class="stats-holder">
       <div class="container" id="stats-container">
         <div class="row stats text-center">
           <div class="col-md-4">
@@ -66,7 +68,7 @@
           </div>
         </div>
       </div>
-    </div><br>
+    </section><br>
 
     <!-- About -->
   <div class="container">
@@ -80,23 +82,64 @@
   </div><br>
 
   <!-- Portfolio -->
-  <div class="container workrow">
-    <h3>Portfolio</h3>
-    <p>Here's some of my work</p>
-    <div class="row workrow1">
-      <div class="col-md-4 work1">
-
+  <section class="workrow">
+    <div class="container">
+      <h3>Portfolio</h3>
+      <span class="spc-txt">Here's some of my work*</span><br>
+      <div class="slider">
+        <div class="slider-img">
+          <ul>
+            <li>
+              <img src="img/candydim.jpg" class="w1" />
+            </li>
+            <li>
+              <img src="img/474014.jpg" />
+            </li>
+          </ul>
+        </div>
+        <div class="button-panel">
+          <button class="prev" style="background-color: rgba(0, 0, 0, 0.8); border-radius: 50px 50px; margin-right: 40px;">Previous</button>
+          <button class="next" style="background-color: rgba(0, 0, 0, 0.8); border-radius: 50px 50px;">Next</button>
+        </div>
       </div>
+      <br>
+      <span class="spc-txt">*For more retouches, check out my Instagram page.</span>
+      <br>
+    </div>
+  </section> <br>
 
-      <div class="col-md-4 work2">
+  <!-- About -->
+  <section class="abt-section">
+    <div class="container">
+      <h3 class="">Say hello!</h3>
+      <div class="row">
+        <div class="col-md-6 insta text-center">
+          <a href="https://www.instagram.com/thetitledtripod">
+            <i class="fab fa-instagram"></i><br>
+            <span class="insta-txt">@thetitledtripod</span>
+          </a>
+        </div>
 
-      </div>
-
-      <div class="col-md-4 work3">
-
+        <div class="col-md-6 mail text-center">
+          <i class="fas fa-envelope"></i><br>
+          <span class="mail-txt">sharan.sridhar05@gmail.com</span>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </section><br>
 
+  <footer class="page-footer font-small blue pt-4 mt-4">
+
+    <!-- Footer Links -->
+    <div class="container-fluid text-center text-md-left">
+      <div class="footer-copyright text-center py-3">Copyright © 2018. Template designed by
+        <a href="http://nishsatish.ml" class="badg"> NishSatish</a>
+      </div>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+
+
+</body>
 </html>

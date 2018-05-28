@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
 @import url('https://fonts.googleapis.com/css?family=PT+Sans|Titan+One');
 
+body {
+		font-family: 'PT Sans', sans-serif;
+}
+
 hr {
 	padding: 0px;
 	color: black;
@@ -9,6 +13,17 @@ hr {
 
 h3 {
 	font-family: 'Titan One', cursive;
+	text-transform: uppercase;
+}
+
+.spc-txt {
+	font-weight: 800;
+}
+
+.footer-copyright a:link {
+	font-size: 14px;
+	color: #2d3033;
+	font-weight: 700;
 }
 
 /* Banner and Navbar
@@ -96,7 +111,164 @@ ________________________________________________________________________________
 	position: relative;
 }
 
+.bio {
+	font-weight: bolder;
+}
+
 /* Portfolio
 ____________________________________________________________________________________________________ */
 
-.work1 .work2 .work3
+.workrow {
+	background: linear-gradient(#d16c6c, #f47a42);
+}
+
+/* #work1 , #work2 , #work3 {
+	height: 180px;
+	width: 100px;
+	border: 1px solid black;
+}
+
+#work1 {
+	background-image: url("../img/candydim.jpg");
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#work2 {
+	background-image: url("../img/474014.jpg");
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+#work3 {
+	background-image: url("../img/candydim.jpg");
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+} */
+
+.slider {
+	margin: 0 auto;
+	width: 80%;
+	min-height: 400px;
+	background-color: #ccc;
+}
+
+.slider-img {
+	width: 100%;
+	overflow: hidden;
+	height: 400px;
+	position: relative;
+}
+
+.slider-img ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	width: 200%;
+	height: 100%;
+	top: 0;
+}
+
+.slider-img li {
+padding: 0;
+margin: 0;
+width: 50%;
+height: 100%;
+overflow: hidden;
+position: absolute;
+top: 0;
+bottom: 0;
+}
+
+.slider-img li img {
+	width: 100%;
+	border: none;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/* .slider-img li .w1 {
+
+	/* background-image: url("../img/candydim.jpg");
+	background-attachment: local;
+	background-repeat: no-repeat;
+	background-size: cover; */
+} */
+
+/* .slider button {
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	top: 0;
+	bottom: 0;
+	width: 20%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	margin: 0;
+	padding: 0;
+	text-align:center;
+	opacity: 0; */
+	/* z-index: 2;
+} */
+.button-panel button {
+		height: 80 px;
+}
+
+.slider button.prev {
+	left: 0;
+}
+
+.slider button.next {
+	right: 0;
+}
+
+.slider button:hover, .slider button:active {
+	opacity: 1.0;
+}
+
+/* About
+ _________________________________________________________________________________________________ */
+
+ .insta {
+	 border: 1px solid red;
+	 /* height: 300px;
+	 width: 100px; */
+	 background: linear-gradient(#e00d76, #e25a24);
+ }
+
+ .mail {
+	 border: 1px solid blue;
+	 /* height: 300px;
+	 width: 100px; */
+	 background: linear-gradient(#c63737, #e26f6f);
+ }
+
+.insta i {
+	font-size: 13em;
+	padding-top: 30px;
+}
+
+.abt-section a:link {
+	color: white;
+}
+
+.mail i {
+	font-size: 13em;
+	padding-top: 30px;
+}
+
+/* Footer
+ _________________________________________________________________________________________________ */
+
+ footer {
+	 background: linear-gradient(#d16c6c, #f47a42);
+ }
